@@ -5,10 +5,13 @@ void setup() {
 }
 
 void draw() {
-  
+drawGameScreen() ;
+drawPlayer() ;
+
 }
 
 void drawStartScreen() {
+
 }
 
 void drawLoseScreen() {
@@ -18,6 +21,11 @@ void drawGameScreen() {
 }
 
 void drawPlayer() {
+background (bgColor);
+fill (playerColor) ;
+ellipse (playerX,playerY,playerRadius,playerRadius);
+  
+
 }
 
 void drawPlatforms() {
@@ -26,6 +34,7 @@ void drawPlatforms() {
 void resetGame(){
   // Initialize Player Position and Velocity
   initializePlatforms();
+int numPlatforms = 8;
 }
 
 void initializePlatforms() {

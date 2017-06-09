@@ -19,12 +19,12 @@ float dragCoeff = 0.03;
 color bgColor = color(255,253,231);
 
 // Player Parameters
-float playerX, playerY;
+float playerX=displayWidth/2, playerY=displayHeight/2;
 float playerVx, playerVy;
 float playerRadius = 20;
 color playerColor = color(179,157,219);
 
-// Max possible Platforms
+// Max possible Platforms                                                                                       
 int lenPlatforms = 30;
 // Average number of Platforms on Screen
 int numPlatforms = 8;
